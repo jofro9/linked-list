@@ -27,6 +27,7 @@ tesk2 = Node(data=("tesk2", 45343883, 45491163))
 hpdl = Node(data=("hpdl", 45326895, 45328710))
 
 def overlaps(node1, node2):
+    # assumes that the pairs of genomic loclations are an ordered pair
     return False if node1.data[1] > node2.data[2] or node1.data[2] < node2.data[1] else True
 
 genes = [mutyh, toe1, tesk2, hpdl]

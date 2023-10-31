@@ -116,7 +116,6 @@ class Graph:
 
         # add an edge from vertex1 to vertex2
         self.vertices_list[index2].add_first(Node(vertex1))
-        print("vertices list:", self.vertices_list)
         if not self.directed: #if the graph is undirected, add an edge from vertex2 to vertex1 as well
             self.vertices_list[index1].add_first(Node(vertex2))
 
@@ -126,11 +125,11 @@ class Graph:
             try:
                 print(names[i], end="\t")
                 self.vertices_list[i].traverse()
-                print('none')
+                print('None')
 
             except TypeError:
                 print(i, end="\t")
                 self.vertices_list[i].traverse()
-                print('none')
+                print('None')
 
           
